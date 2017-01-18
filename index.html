@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>Sunshine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Sunshine">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Sunshine">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Sunshine">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Sunshine" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -33,7 +33,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">Sunshine</a>
       </h1>
       
     </div>
@@ -87,26 +87,34 @@
 <p>###2.安装node，<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
 <p>###3.打开可（tao）爱（yan）的shell<br>执行 </p>
 <pre><code>$sudo npm install -g hexo  
-</code></pre><p>这个时间有点长，不要着急哦  </p>
-<p>####初始化hexo<br>在用户目录下创建名为hexo的文件夹，然后cd到此目录下，执行下面的命令：  </p>
+</code></pre><p>这个时间有点长，不要着急哦，成功后大概这样</p>
+<p><img src="1.png" alt=""></p>
+<p>####初始化hexo<br>在用户目录下创建名为hexo的文件夹(或建立你喜欢位置的文件夹)，cd到此目录下，执行下面的命令：  </p>
 <pre><code>$hexo init  
-</code></pre><p>####安装依赖</p>
+</code></pre><p>成功后    </p>
+<p><img src="2.png" alt=""></p>
+<p>####安装依赖</p>
 <p>正如上图所提示的，部署前不要忘了安装依赖  </p>
 <pre><code>$npm install
 </code></pre><p>####生成静态页面</p>
 <p>执行下面的命令，生成静态页面  </p>
 <pre><code>$hexo generate
-</code></pre><p>####开启服务</p>
+</code></pre><p>成功后  </p>
+<p><img src="3.png" alt=""></p>
+<p>####开启服务</p>
 <p>开启本地服务器。Ps：停止服务使用Ctrl+C。（这个用不到，最后配置完结束就行了） </p>
 <pre><code>$hexo server
-</code></pre><p>然后就可以本地查看效果啦<br>打开浏览器，输入网址<a href="http://0.0.0.0:4000/" target="_blank" rel="external">localhost</a><br>surprise！</p>
+</code></pre><p>成功后</p>
+<p><img src="4.png" alt=""></p>
+<p>然后就可以本地查看效果啦<br>打开浏览器，输入网址<a href="http://0.0.0.0:4000/" target="_blank" rel="external">localhost</a><br>surprise！</p>
+<p><img src="5.png" alt=""></p>
 <p>###好，下面我们部署酷炫的github，我们需要做两件事：新建repository和配置SSH Key<br>1.新建名称格式：your_user_name.github.io 的仓库<br>2.来给这个仓库添加SSH key，参考官方文档做这两部分  Generating a new SSH key and adding it to the ssh-agent<br><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#generating-a-new-ssh-key" target="_blank" rel="external">git官方帮助链接</a><br>需要打的代码很少的，这一步方便后面的设置，一定记住你的账号密码哦  </p>
-<p>好下面我们进入最重要的部分，小编琢磨这个用了一天。。。惭愧  </p>
+<p>好下面我们进入最重要的部分，小编琢磨这个用了一天。。。  </p>
 <p>###修改配置文件<br>打开_config.yml文件，在文件末尾修改为如下效果，Ps:yuweiguocn改为你自己的用户名</p>
 <pre><code>deploy:              
  type: git          
-    repo: https://github.com/yuweiguocn/yuweiguocn.github.io.git          
-   branch: master  
+    repo: https://github.com/yuweiguocn/yuweiguocn.github.io.git
+    branch: master  
 </code></pre><p>##记住这里一定要切换到英文自己手打！冒号后面要加一个空格。然后保存就可以了  </p>
 <p>###安装git部署器<br>要先安装依赖，部署之前都要依赖</p>
 <pre><code>$nmp install  
@@ -118,12 +126,13 @@
 <pre><code>$hexo generate  
 </code></pre><p>再</p>
 <pre><code>$hexo deploy  
-</code></pre><p>显示已git，大功告成:)</p>
+</code></pre><p>显示已git，大功告成:)<br>打开浏览器输入网址：<a href="http://yuweiguocn.github.io" target="_blank" rel="external">http://yuweiguocn.github.io</a> Ps:yuweiguocn改为你自己的用户名</p>
+<p>ps:错误解决方法以及如何写自己的第一个博客，还有莫名其妙消失的图片，宝宝睡醒了再说哈哈</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/18/how-to-establish-your-blog/" data-id="ciy2zvvsc0001ay0a150j4v21" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/18/how-to-establish-your-blog/" data-id="ciy30l8l20001l90albjgcwtz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -160,7 +169,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/18/test/" data-id="ciy2zvvsf0002ay0aakm6v4xr" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/18/test/" data-id="ciy30l8l60002l90a00qnlwj9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -205,7 +214,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/18/hello-world/" data-id="ciy2zvvrw0000ay0a2ekl3zy3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/18/hello-world/" data-id="ciy30l8kx0000l90ajljptmu8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -268,7 +277,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
+      &copy; 2017 little<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
